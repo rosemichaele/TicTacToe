@@ -50,7 +50,7 @@ the following software requirements must be met on the machine running the tests
 
 After the above prerequisites have been installed. Clone or copy this project to a directory on your computer, then run
 the below command in the project's root directory. Usually this should be done in a virtual environment. Properly setting
-up a virtual environment is a matter of personal preference and outside the scope of this project.::
+up a virtual environment is a matter of personal preference and outside the scope of this project::
 
     > pip install requirements.txt
 
