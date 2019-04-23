@@ -6,6 +6,9 @@ end test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshl
 assignment. Below, you will also find a write-up of my feedback from testing the game and recommendations for improving
 the overall quality. Finally, please visit `YouTube <http://www.example.com/>`_ for a screencast of the tests in action.
 
+I have included my response for Question #2 in the assignment in the `Creating a new automated regression suite for Calendly`_
+section.
+
 Automated tests
 ---------------
 I have extensive experience using the keyword-driven acceptance testing tool `Robot Framework <https://robotframework.org>`_.
@@ -38,17 +41,19 @@ the following software requirements must be met on the machine running the tests
 
     1. Python 3.3 or late must be installed.
     2. The Python package manager pip must be installed (usually included with the standard installation).
-    3. A WebDriver that meets W3C specifications and that is supported by Selenium must be installed and on the system
-       PATH. The matching browser's name should be defined in the variables_ file if Safari is not chosen.
+    3. A WebDriver that meets W3C specifications and that is supported by SeleniumLibrary must be installed and on the
+       system PATH (any major browser). The matching browser's name should be defined in the variables_ file if Safari
+       is not chosen.
 
 .. _variables: TicTacToe/variables.py
 
 After the above prerequisites have been installed. Clone or copy this project to a directory on your computer, then run
-the following command in the project's root directory::
+the below command in the project's root directory. Usually this should be done in a virtual environment. Properly setting
+up a virtual environment is a matter of personal preference and outside the scope of this project.::
 
     > pip install requirements.txt
 
-That's all - now you are ready to run the tests. Run all of the tests in the TicTacToe directory (12 total) and write
+That's all - now you are ready to run the tests. Run all of the tests in the TicTacToe directory (12 in total) and write
 output files to any desired directory::
 
     > robot --outputdir output/ TicTacToe/
@@ -92,7 +97,21 @@ the issue and my recommendation to improve or correct it.
 | after numeric input duplicates   | 2. Click Play again.                       |   after the game is started      |
 | the game board                   | 3. Another 3x3 board is generated          |                                  |
 +----------------------------------+--------------------------------------------+----------------------------------+
+| Placeholder text and instructions| 1. Try to read the placeholder text in the | - Include playing instructions   |
+| are poor / lacking               |    input field.                            | - Make sure placeholder text is  |
+|                                  | 2. Try to determine how to play or start   |   is visible                     |
+|                                  |    the game without trial and error.       | - Display a 3x3 board by default |
++----------------------------------+--------------------------------------------+----------------------------------+
+| Only way to play again is to     | 1. Play a game until it won / drawn.       | - Add a "Play Again" button      |
+| refresh the page                 | 2. You must refresh to play again.         | - Create the settings for the    |
+|                                  |                                            |   new game in a modal            |
++----------------------------------+--------------------------------------------+----------------------------------+
+| The layout is plain and          | 1. Play a game and try to enjoy it.        | - Add custom letters / themes    |
+| uninteresting                    | 2. It is hard!                             | - Add animations                 |
+|                                  |                                            | - Add sounds                     |
++----------------------------------+--------------------------------------------+----------------------------------+
 
 Creating a new automated regression suite for Calendly
 ------------------------------------------------------
+
 Considerations: web, mobile, what tests to automate / not automate, where it fits in current process. unit, acceptance, end-to-end tests.
