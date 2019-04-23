@@ -4,7 +4,8 @@ Thank you for the opportunity to demonstrate my skills in and passion for softwa
 at a great, Atlanta-based technology company in Calendly! This document provides a description of the automated end-to-
 end test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshlfts32/full/bjambP/>`_ described in the
 assignment. Below, you will also find a write-up of my feedback from testing the game and recommendations for improving
-the overall quality. Finally, please visit `YouTube <http://www.example.com/>`_ for a screencast of the tests in action.
+the overall quality. Finally, please visit `YouTube <http://www.example.com/>`_ (this is not yet done) for a screencast
+of the tests in action.
 
 I have included my response for Question #2 in the assignment in the `Creating a new automated regression suite for Calendly`_
 section.
@@ -39,7 +40,7 @@ generated using the Libdoc_ tool.
 There are several options for running these tests with Robot Framework. I will discuss only a few. Before you begin,
 the following software requirements must be met on the machine running the tests:
 
-    1. Python 3.3 or late must be installed.
+    1. Python 3.3 or later must be installed.
     2. The Python package manager pip must be installed (usually included with the standard installation).
     3. A WebDriver that meets W3C specifications and that is supported by SeleniumLibrary must be installed and on the
        system PATH (any major browser). The matching browser's name should be defined in the variables_ file if Safari
