@@ -1,0 +1,7 @@
+GAME_TABLE_LOCATOR = "id:table"
+BOARD_SIZE_INPUT = "id:number"
+PLAY_BUTTON = "id:start"
+PAGE_FRAME = "id:result"
+BROWSER = "Safari"
+GAME_URL = "https://codepen.io/jshlfts32/full/bjambP/"
+GAME_RESULT = "id:endgame"
