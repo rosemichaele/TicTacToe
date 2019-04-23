@@ -75,7 +75,7 @@ tests fail.
 
 Feedback from testing
 ---------------------
-The following table breaks down each issue identified during testing . Review each row to understand how to reproduce
+The following table breaks down each issue identified during testing. Review each row to understand how to reproduce
 the issue and my recommendation to improve or correct it.
 
 +----------------------------------+--------------------------------------------+----------------------------------+
@@ -113,5 +113,38 @@ the issue and my recommendation to improve or correct it.
 
 Creating a new automated regression suite for Calendly
 ------------------------------------------------------
+It is always a challenge to retroactively implement automated regression tests for a production application. Doing so
+requires careful planning to ensure new feature work and bug fixes are supported while also adding **valuable** automated
+test coverage. To develop a plan, the following steps should be completed to begin with:
 
-Considerations: web, mobile, what tests to automate / not automate, where it fits in current process. unit, acceptance, end-to-end tests.
+    1. Gather and document existing test cases. We need not only test steps and expected results, but also required time
+       to complete the test manually and how critical the test is to the application.
+    2. Evaluate each manual test to estimate the time investment required to automate it, and whether or not the test
+       is a good candidate for automation at all.
+    3. Prioritize tests for automation based on factors in #1 and #2. Tests that can be quickly automated, that are executed
+       often manually, and are critical to the functionality of the system should be first. Tests that are difficult to
+       automate, that are not executed often manually or are not critical tests should be automated later or not at all.
+    4. Finally, we would want to ensure that tests are written in a maintainable and reproducible manner. Selenium-based
+       tests are notorious for being fragile and can often break with minor changes to the front-end of the application.
+       Therefore, automated tests need to be designed with that in mind, so that existing test cases can be quickly updated
+       and new ones can be quickly written.
+
+In terms of the technology and tools to use, there are several considerations:
+
+    - End-to-end web tests typically require Selenium, though newer tools like Puppeteer_ exist for Chromium browser-based
+      automated tests. If many browsers, browser versions and operating systems are supported, third-party platforms like
+      Sauce Labs and Browser Stack can be valuable.
+    - Mobile testing involves many of the same considerations as web testing, though platforms and browser version are
+      more numerous.
+    - All automated tests should be individually executable and independent of other tests, expected external states, or
+      data that is not created during the test.  This allows tests to be run in parallel when the time comes.
+    - The technology stack of the system under test is important to consider.  Automated tests are most valuable when they
+      are executed as early in the development process as possible. Ideally, this means allowing developers to easily execute
+      tests in local or integrated development environments. If automated tests have the same dependencies as the system
+      being tested, developers can execute and understand them more easily.
+
+Lastly, and most importantly, teamwork and communication are key factors in the success of a project like this. All plans
+should be clearly communicated and documented. Progress should be shared. Opinions should be heard. We want to avoid
+quietly developing an automated test tool only to find that it is not useful down the road.
+
+.. _Puppeteer: https://github.com/GoogleChrome/puppeteer
