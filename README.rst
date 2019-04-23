@@ -134,10 +134,10 @@ In terms of the technology and tools to use, there are several considerations:
     - End-to-end web tests typically require Selenium, though newer tools like Puppeteer_ exist for Chromium browser-based
       automated tests. If many browsers, browser versions and operating systems are supported, third-party platforms like
       Sauce Labs and Browser Stack can be valuable.
-    - Mobile testing involves many of the same considerations as web testing, though platforms and browser version are
-      more numerous.
+    - Mobile testing involves many of the same considerations as web testing, though platforms and browser versions are
+      more numerous. Appium is the standard tool for mobile test automation.
     - All automated tests should be individually executable and independent of other tests, expected external states, or
-      data that is not created during the test.  This allows tests to be run in parallel when the time comes.
+      data that is not created during the test.  This allows tests to be run in parallel and across environments when the time comes.
     - The technology stack of the system under test is important to consider.  Automated tests are most valuable when they
       are executed as early in the development process as possible. Ideally, this means allowing developers to easily execute
       tests in local or integrated development environments. If automated tests have the same dependencies as the system
@@ -145,6 +145,8 @@ In terms of the technology and tools to use, there are several considerations:
 
 Lastly, and most importantly, teamwork and communication are key factors in the success of a project like this. All plans
 should be clearly communicated and documented. Progress should be shared. Opinions should be heard. We want to avoid
-quietly developing an automated test tool only to find that it is not useful down the road.
+quietly developing an automated test tool only to find that it is not useful down the road. In the same way that we would
+not complete feature work without user input, we should not create automated test features without input from product
+and development teams.
 
 .. _Puppeteer: https://github.com/GoogleChrome/puppeteer
