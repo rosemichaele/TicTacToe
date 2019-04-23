@@ -5,3 +5,5 @@ pyvenv.cfg
 pip-selfcheck.json
 *.idea
 *.DS_Store
+*__pycache__/
+*.pyc
