@@ -1,8 +1,8 @@
 Calendly Tic Tac Toe Test Suite
 ===============================
 Thank you for the opportunity to demonstrate my skills in and passion for software testing, and for the chance to work
-at a great, Atlanta-based technology company in Calendly! This document provides a description of the automated end-to-
-end test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshlfts32/full/bjambP/>`_ described in the
+at a great, Atlanta-based technology company in Calendly! This document provides a description of the automated end-to-end 
+test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshlfts32/full/bjambP/>`_ described in the
 assignment. Below, you will also find a write-up of my feedback from testing the game and recommendations for improving
 the overall quality. Finally, please visit `YouTube <http://www.example.com/>`_ (this is not yet done) for a screencast
 of the tests in action.
