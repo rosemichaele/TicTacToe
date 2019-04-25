@@ -4,7 +4,7 @@ Thank you for the opportunity to demonstrate my skills in and passion for softwa
 at a great, Atlanta-based technology company in Calendly! This document provides a description of the automated end-to-end 
 test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshlfts32/full/bjambP/>`_ described in the
 assignment. Below, you will also find a write-up of my feedback from testing the game and recommendations for improving
-the overall quality. Finally, please visit `YouTube <http://www.example.com/>`_ (this is not yet done) for a screencast
+the overall quality. Finally, please visit `YouTube <https://youtu.be/QJiAniqS32M>`_ (this is not yet done) for a screencast
 of the tests in action.
 
 I have included my response for Question #2 in the assignment in the `Creating a new automated regression suite for Calendly`_
@@ -100,7 +100,7 @@ the issue and my recommendation to improve or correct it.
 +----------------------------------+--------------------------------------------+----------------------------------+
 | Placeholder text and instructions| 1. Try to read the placeholder text in the | - Include playing instructions   |
 | are poor / lacking               |    input field.                            | - Make sure placeholder text is  |
-|                                  | 2. Try to determine how to play or start   |   is visible                     |
+|                                  | 2. Try to determine how to play or start   |   visible                        |
 |                                  |    the game without trial and error.       | - Display a 3x3 board by default |
 +----------------------------------+--------------------------------------------+----------------------------------+
 | Only way to play again is to     | 1. Play a game until it won / drawn.       | - Add a "Play Again" button      |
