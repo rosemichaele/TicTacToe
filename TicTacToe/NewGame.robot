@@ -31,7 +31,7 @@ No Board Should Be Displayed By Default
     [Documentation]  Upon first arriving at the Tic Tac Toe site or refreshing page, the game board should not be displayed.
     Game Board Should Be Displayed  0x0
 
-No Board Should Be Displayed When Non-Numberic Input
+No Board Should Be Displayed When Non-Numeric Input
     [Documentation]  Invalid input to start the game should have no effect.
     Start a New Game                size=invalid
     Game Board Should Be Displayed  0x0
