@@ -4,7 +4,7 @@ Thank you for the opportunity to demonstrate my skills in and passion for softwa
 at a great, Atlanta-based technology company in Calendly! This document provides a description of the automated end-to-end 
 test suite that I created for the `Tic Tac Toe game <https://codepen.io/jshlfts32/full/bjambP/>`_ described in the
 assignment. Below, you will also find a write-up of my feedback from testing the game and recommendations for improving
-the overall quality. Finally, please visit `YouTube <https://youtu.be/QJiAniqS32M>`_ (this is not yet done) for a screencast
+the overall quality. Finally, please visit `YouTube <https://youtu.be/teikEG92c9M>`_ for a screencast
 of the tests in action.
 
 I have included my response for Question #2 in the assignment in the `Creating a new automated regression suite for Calendly`_
