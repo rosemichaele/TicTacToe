@@ -10,6 +10,9 @@ ${DRAW_MSG}     Nobody won! On the bright side, nobody lost either. Refresh to p
 Go To Tic Tac Toe Site
     [Documentation]  Open a browser and navigate to https://codepen.io/jshlfts32/full/bjambP/ to play Tic Tac Toe!
     Open Browser    ${GAME_URL}     browser=${BROWSER}
+    # Set Selenium Speed  0.15 seconds
+    # Set Window Size     1440    800
+    # Set Window Position     2   2
     Select Frame    ${PAGE_FRAME}
 
 Winner Should Be Declared
